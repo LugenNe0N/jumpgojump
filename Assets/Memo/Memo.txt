@@ -1,0 +1,26 @@
+﻿【仕様】
+①
+StandサイズからRaycast長さ設定
+タグ"地面"とぶつかれば接地、離れれば空中
+
+②
+FlagManager.Instance.flags[0] = 地面に接触している
+FlagManager.Instance.flags[1] = 特定速度で動いた
+FlagManager.Instance.flags[2] = 最初の一回ですよ
+FlagManager.Instance.flags[3] = コントローラー振ってますよ
+FlagManager.Instance.flags[4] = コントローラーのメニューボタンクリック
+FlagManager.Instance.flags[5] = 大ジャンプ
+FlagManager.Instance.flags[6] = 小ジャンプ
+
+FlagManager.Instance.flags[9] = GameClear
+FlagManager.Instance.flags[90] = GameOver
+
+FlagManager.Instance.flags[10] ～　[49] = CheckPoint
+
+
+
+③やること
+・BGM関連：タイトル、設定、メニュー用と各ステージ用でBGMを切り替える。　ゲームオーバー用追加
+・チェックポイント置き換え：オブジェクト変更。チェックポイント通るとCPライトの色変更
+・Stage6作成
+・ハイスコア機能追加

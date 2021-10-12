@@ -1,0 +1,53 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.UI;
+
+public class TimerScript : MonoBehaviour {
+
+    [SerializeField]
+    private int minute;
+    [SerializeField]
+    private float seconds;
+    //　前のUpdateの時の秒数
+    private float oldSeconds;
+    //　タイマー表示用テキスト
+    public Text timerText;
+
+    static public float timeDate;
+
+    public Text displaytext;
+
+    public Text resultTimeText;
+
+    void Start()
+    {
+        minute = 0;
+        seconds = 0f;
+        oldSeconds = 0f;
+        //timerText = GetComponentInChildren<Text>();
+    }
+
+    void Update()
+    {
+        if (FlagManager.Instance.flags[9] == false)
+        {
+            seconds += Time.deltaTime;
+            if (seconds >= 60f)
+            {
+                minute++;
+                seconds = seconds - 60;
+            }
+            //　値が変わった時だけテキストUIを更新
+            if ((int)seconds != (int)oldSeconds)
+            {
+                timerText.text = "Time : " + minute.ToString("00") + ":" + ((int)seconds).ToString("00");
+                displaytext.text = "Time : " + minute.ToString("00") + ":" + ((int)seconds).ToString("00");
+            }
+            oldSeconds = seconds;
+            timeDate = seconds;
+
+            resultTimeText.text = "Time : " + minute.ToString("00") + ":" + ((int)seconds).ToString("00");
+        }
+    }
+}

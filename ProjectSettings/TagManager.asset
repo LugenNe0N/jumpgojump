@@ -1,0 +1,67 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Ground
+  - GoalArea
+  - DeathPoint
+  - CheckPoint
+  - Item
+  - Switch1
+  - SF_Door
+  - Switch2
+  - Key
+  - AutoDoor1
+  - AutoDoor2
+  - AutoDoor3
+  - KeyDoor
+  - OpenArea3
+  - OpenArea2
+  - OpenArea5
+  - OpenArea4
+  - OpenArea
+  - Key2
+  - hari
+  - Damege
+  - MoveStage
+  - Hatch
+  - CheckPoint2
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
